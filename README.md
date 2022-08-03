@@ -12,10 +12,10 @@
   <a href="https://github.com/samuelroiz"><img width="36px" alt="GitHub Homepage" title="GitHub Homepage" src="https://github.com/samuelroiz/samuelroiz.github.io/blob/main/images_for_readme/github_icon_blue.png?raw=true"/></a>
   &#8287;&#8287;&#8287;&#8287;&#8287;
 </p>
-	<h2> &#x1F468;&#x200D;&#x1F4BB; Github Stats </h2>
+	<h2>  Github Stats &#x1F468;&#x200D;&#x1F4BB; </h2>
 		<a href="https://github.com/samuelroiz"><img align="right" width="43.3%" src="https://github.com/samuelroiz/samuelroiz.github.io/blob/main/images_for_readme/cat_on_computer_gif.gif?raw=true"/></a>
 		<a href="https://github.com/samuelroiz"><img width="50%" src="https://github-readme-stats.vercel.app/api?username=samuelroiz"></a>
-<a href="https://github.com/samuelroiz"><img width="25%" src="https://enj51elrl78ffyf.m.pipedream.net"></a>
+<a href="https://github.com/samuelroiz"><img width="15%" src="https://enj51elrl78ffyf.m.pipedream.net"></a>
 </div>
 <h2>  About me📋 </h2>
 <div>
