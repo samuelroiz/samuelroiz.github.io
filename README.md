@@ -45,6 +45,7 @@
 	<details>
 		<summary>Disney🏰</summary>
 		<a href="https://www.instagram.com/dtdpinbusters/"><img align="right" width="35%" src="https://github.com/samuelroiz/samuelroiz.github.io/blob/main/images_for_readme/IMG_1060.jpg"></a>
+		<br>
 		<p> &emsp; I enjoy going to Disneyland and collecting pins. I currently collect pins related to Sven and Kristoff from Frozen. I also collect Stitch as a pirate from Pirates of the Caribbean. I not only gather, but I also have a small business in the Disney community. The firm is for Disney pick-ups for customers that want pins, merchandise, and clothes.   </p>
 &#8287;&#8287;&#8287;&#8287;&#8287;
 <br>
