@@ -24,10 +24,10 @@
 		<summary>Olympic weightlifting🏋️</summary>
 		<a href="https://games.crossfit.com/athlete/558853"><img align="right" width="35%" src="https://github.com/samuelroiz/samuelroiz.github.io/blob/main/images_for_readme/snatch_all_day_gif.gif"></a>
 &#8287;&#8287;&#8287;&#8287;&#8287;
-	</details>
+		</details>
 	<details>
 		<summary>Disney🏰</summary>
-		<a href="https://www.instagram.com/dtdpinbusters/"><img align="right" width="1%" src="https://github.com/samuelroiz/samuelroiz.github.io/blob/main/images_for_readme/IMG_1060.jpg"</a>
+		<a href="https://www.instagram.com/dtdpinbusters/"><img align="right" width="50%" src="https://github.com/samuelroiz/samuelroiz.github.io/blob/main/images_for_readme/IMG_1060.jpg"></a>
 &#8287;&#8287;&#8287;&#8287;&#8287;
 	</details>
 &#8287;&#8287;&#8287;&#8287;&#8287;
