@@ -12,7 +12,11 @@
   <a href="https://github.com/samuelroiz" alt="GitHub Homepage"><img width="36px" src="https://github.com/samuelroiz/samuelroiz.github.io/blob/main/images_for_readme/github_icon_blue.png?raw=true"/></a>
   &#8287;&#8287;&#8287;&#8287;&#8287;
 </p>
-
+	<h2> &#x1F468;&#x200D;&#x1F4BB; Github Stats </h2>
+		<a href="https://github.com/samuelroiz"><img align="right" width="43.3%" src="https://github.com/samuelroiz/samuelroiz.github.io/blob/main/images_for_readme/cat_on_computer_gif.gif?raw=true"/></a>
+		<a href="https://github.com/samuelroiz"><img width="50%" src="https://github-readme-stats.vercel.app/api?username=samuelroiz"></a>
+<a href="https://github.com/samuelroiz"><img width="25%" src="https://enj51elrl78ffyf.m.pipedream.net"></a>
+</div>
 <h2>  About me📋 </h2>
 <div>
 	<details>
@@ -43,12 +47,10 @@ After years of training as an athlete he earned his CrossFit <b>Level 1 Certific
 </p>
 &#8287;&#8287;&#8287;&#8287;&#8287;
 <div>
-	<h2> &#x1F468;&#x200D;&#x1F4BB; Github Stats </h2>
-		<a href="https://github.com/samuelroiz"><img align="right" width="43.3%" src="https://github.com/samuelroiz/samuelroiz.github.io/blob/main/images_for_readme/cat_on_computer_gif.gif?raw=true"/></a>
-		<a href="https://github.com/samuelroiz"><img width="50%" src="https://github-readme-stats.vercel.app/api?username=samuelroiz"></a>
-<a href="https://github.com/samuelroiz"><img width="25%" src="https://enj51elrl78ffyf.m.pipedream.net"></a>
-</div>
+
 <div>
 	<p align="right">(<a href="#top">back to top</a>)	</p>
 </div>
 </html>
+
+
