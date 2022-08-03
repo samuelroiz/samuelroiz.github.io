@@ -17,7 +17,7 @@
 <div>
 	<details>
 		<summary>Rugby🏉</summary>
-		<a href="https://www.instagram.com/csunmensrugbyclub/"><img align="right" width="50%" src="https://github.com/samuelroiz/samuelroiz.github.io/blob/main/images_for_readme/FEFD1742-5391-4C76-B11C-3E1B24E548E1_1_105_c.jpeg"</a>
+		<a href="https://www.instagram.com/csunmensrugbyclub/"><img align="right" width="50%" src="https://github.com/samuelroiz/samuelroiz.github.io/blob/main/images_for_readme/FEFD1742-5391-4C76-B11C-3E1B24E548E1_1_105_c.jpeg"></a>
 &#8287;&#8287;&#8287;&#8287;&#8287;
 	</details>
 </div>
