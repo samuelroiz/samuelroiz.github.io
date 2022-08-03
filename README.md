@@ -17,24 +17,20 @@
 <div>
 	<details>
 		<summary>Rugby🏉</summary>
-		<a href="https://www.instagram.com/csunmensrugbyclub/"><img width="15%" src="https://github.com/samuelroiz/samuelroiz.github.io/blob/main/images_for_readme/FEFD1742-5391-4C76-B11C-3E1B24E548E1_1_105_c.jpeg"</a>
+		<a href="https://www.instagram.com/csunmensrugbyclub/"><img align="right" width="50%" src="https://github.com/samuelroiz/samuelroiz.github.io/blob/main/images_for_readme/FEFD1742-5391-4C76-B11C-3E1B24E548E1_1_105_c.jpeg"</a>
+&#8287;&#8287;&#8287;&#8287;&#8287;
 	</details>
 	<details>
 		<summary>Olympic weightlifting🏋️</summary>
-		<a href="https://games.crossfit.com/athlete/558853"><img align="right" width="15%" src="https://github.com/samuelroiz/samuelroiz.github.io/blob/main/images_for_readme/snatch_all_day_gif.gif"></a>
+		<a href="https://games.crossfit.com/athlete/558853"><img align="right" width="35%" src="https://github.com/samuelroiz/samuelroiz.github.io/blob/main/images_for_readme/snatch_all_day_gif.gif"></a>
+&#8287;&#8287;&#8287;&#8287;&#8287;
 	</details>
 	<details>
 		<summary>Disney🏰</summary>
 		<a href="https://www.instagram.com/dtdpinbusters/"><img align="right" width="1%" src="https://github.com/samuelroiz/samuelroiz.github.io/blob/main/images_for_readme/IMG_1060.jpg"</a>
+&#8287;&#8287;&#8287;&#8287;&#8287;
 	</details>
-	<details>
-		<summary>Video games🎮</summary>
-	</details>
-	<details>
-		<summary>Chess ♟</summary>
-		<a href="https://www.chess.com/stats/overview/toxicbyte?"><img width="15%" src=""</a>
-		<a href="https://www.chess.com/member/toxicbyte"><img align="right" width="15%" src="https://github.com/samuelroiz/samuelroiz.github.io/blob/main/images_for_readme/chess_piece_gif.gif"></a>
-	</details>
+&#8287;&#8287;&#8287;&#8287;&#8287;
 </p>
 
 <h2> &#x1F468;&#x200D;&#x1F4BB; Github Stats </h2>
