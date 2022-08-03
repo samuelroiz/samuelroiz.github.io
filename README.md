@@ -1,5 +1,7 @@
 <html>
 	<head>
+	<style> .float-left { float: right; }
+	</style>
 	</head>
 <p align="center">
 	<a id="footer"><img src="https://github.com/samuelroiz/samuelroiz.github.io/blob/main/images_for_readme/hello_there.gif" width="75%" height="auto"/></a>
@@ -36,7 +38,7 @@
 		<p align="left"> Coach <b>Sam</b> began his CrossFit career in 2009 at the Cave located in <b>Northern California</b>. In his early years, he took courses in gymnastics and parkour before joining the CrossFit community. 
 
 After years of training as an athlete he earned his CrossFit <b>Level 1 Certification</b> in 2016, with a specialization in <b>Olympic Weightlifting</b>, and began his coaching career. Coach Sam has been a member of the CrossFit community since the beginning of CrossFit and his passion for fitness drives him to continue inspiring members to achieve their gym goals. Through his years of experience and training, he continues to share his knowledge and expertise with our hearing and non hearing members as he is also proficient in <b>American Sign Language</b>.</p>
-		<a href="https://games.crossfit.com/athlete/558853"><img align="right" width="35%" src="https://github.com/samuelroiz/samuelroiz.github.io/blob/main/images_for_readme/snatch_all_day_gif.gif"></a>
+		<a class="float-left" href="https://games.crossfit.com/athlete/558853"><img width="35%" src="https://github.com/samuelroiz/samuelroiz.github.io/blob/main/images_for_readme/snatch_all_day_gif.gif"></a>
 &#8287;&#8287;&#8287;&#8287;&#8287;
 <br>
 <br>
