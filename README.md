@@ -23,7 +23,7 @@
 		<br>
 		<p> &emsp; I started playing rugby as a child that was introduced to the sport by an Irish family in the bay area. I played through high school and college as I became the CSUN Men's rugby president for CSUN. My favorite rugby team is the IRFU and the Brave Blossoms. 
 
-&emsp; The photograph on the right is of me visiting Japan during the year of the World Cup. </p>
+&emsp; <i>The photograph on the right is of me visiting Japan during the year of the <b>World Cup</b>.</i> </p>
 &#8287;&#8287;&#8287;&#8287;&#8287;
 <br>
 <br>
@@ -40,7 +40,7 @@
 
 &emsp; After years of training as an athlete he earned his CrossFit <b>Level 1 Certification</b> in 2016, with a specialization in <b>Olympic Weightlifting</b>, and began his coaching career. Coach Sam has been a member of the CrossFit community since the beginning of CrossFit and his passion for fitness drives him to continue inspiring members to achieve their gym goals. Through his years of experience and training, he continues to share his knowledge and expertise with our hearing and non hearing members as he is also proficient in <b>American Sign Language</b>.
 
-&emsp; The photograph on the right is of me snatching 255 pounds. 
+&emsp; <i>The photograph on the right is of me snatching <b>255 </b> pounds. </i>
 </p>
 &#8287;&#8287;&#8287;&#8287;&#8287;
 <br>
@@ -54,7 +54,7 @@
 		<a href="https://www.instagram.com/dtdpinbusters/"><img align="right" width="35%" src="https://github.com/samuelroiz/samuelroiz.github.io/blob/main/images_for_readme/IMG_1060.jpg"></a>
 		<br>
 		<p> &emsp; I enjoy going to Disneyland and collecting pins. I currently collect pins related to Sven and Kristoff from Frozen. I also collect Stitch as a pirate from Pirates of the Caribbean. I not only gather, but I also have a small business in the Disney community. The firm is for Disney pick-ups for customers that want pins, merchandise, and clothes. </p>
-		<p align="right">&emsp; The photograph on the right is of my Sven and Kristoff collection. Collected since 2019.  </p>
+		<p>&emsp; <i> The photograph on the right is of my Sven and Kristoff collection. Collected since 2019. </i> </p>
 &#8287;&#8287;&#8287;&#8287;&#8287;
 <br>
 <br>
