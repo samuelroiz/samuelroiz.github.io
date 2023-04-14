@@ -1,0 +1,117 @@
+style_for_test_test.css
+body{
+    background-color: #EDEDED;
+}
+
+.navbar-brand, .nav-link{
+	color: #eaeeee
+}
+#navbar {
+    position: fixed;
+    top: 0px;
+    width: 10%;
+}​
+.navbar{
+    max-height: 50px;
+	background-color: #819b9e;
+    font-size: 15px;
+}
+.navbar-text{
+	color: white;
+	margin-left: 50px;
+	padding: inherit;
+	font-weight: bold;
+}
+.dropdown-item{
+    color: #0c2624;
+}
+.dropdown-menu .dropdown-item:hover, .dropdown-menu .dropdown-item:active{
+    background-color:#adc7c4;
+}
+.nav-link:hover {
+    color:#ffffff;
+}
+.btn{
+	background-color: #819b9e
+}
+
+/* Media Queries */
+@media (max-width: 900px){
+.navbar-expand-lg{
+	background-color: #5a7978;
+}
+
+.navbar div{
+    margin: inherit;
+    background-color: rgb(24, 2, 67);
+}
+
+
+button{
+    margin-left: auto;
+}
+button:focus {
+    outline: 1px dotted;
+}
+}
+.description-content {
+	margin-top: 30px;
+	margin-bottom: 60px;
+	padding: 10px 30px 5px;
+	color: black;
+	background-color: white;
+}
+.imageNav-content {
+	margin-top: 40px;
+	margin-bottom: 20px;
+	padding: 10px 30px 40px;
+	color: black;
+	background-color: white;
+}
+.description-header, .imageNav-header {
+	padding-top: 15px;
+	padding-left: 4px;
+	color: #38554c;
+	font-size: 26px;
+	font-weight: bold;
+	font-family: Georgia, Times, "Times New Roman", serif;
+}
+.navbar-image{
+	height: 50px;
+	/* put value of image height as your need */
+	float: none;
+	margin-right: 7px;
+}
+img{
+	width: 100%;
+	height: 100%;
+}
+.image-left {
+	float: left;
+	width: 50%;
+	height: 50%;
+}
+p{
+	color: #414D4A;
+	font-size: 14px;
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: 2 ;
+}
+.active, .img-hover:hover{
+    border-color:#030611;
+    border-style: solid;
+}
+.footer{
+    border-top-width: 4px;
+    color: #000000;
+    min-height: 50px;
+    font-size: 12px;
+    text-align: center;
+    position: fixed;
+    padding-top: 15px;
+	padding-left: 20px;
+	padding-right: 20px;
+	left: 0;
+	bottom: 0;
+    float: none;
+}
