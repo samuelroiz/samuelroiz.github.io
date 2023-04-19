@@ -27,28 +27,36 @@
 
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
             <div class="container-fluid">
-                <a class="navbar-brand" href="index.html">
-                    <img class="navbar-image" src="assets/images/penny_head.png" alt="Bootstrap" width="10" height="14">
-                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-            <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
-                <ul class="navbar-nav ms-auto flex-nowrap">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Projects
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" id="recent-dropdown" href="#">Recent</a></li>
-                            <li><a class="dropdown-item" href="#">Data Analysis</a></li>
-                            <li><a class="dropdown-item" href="#">Computer Science</a></li>
-                            <li><a class="dropdown-item" href="#">Need Idea here</a></li>
-                        </ul>
-                    </li>
-                </ul>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNavDarkDropdown">
+                    <ul class="navbar-nav flex-nowrap">
+                        <li class="nav-brand">
+                            <a href="index.html">
+                                <img class="navbar-image" src="assets/images/penny_head.png" alt="Bootstrap" width="10" height="14"> 
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Projects
+                            </a>
+                            <ul class="dropdown-menu bg-dark">
+                                <li><a class="dropdown-item" href="#">Recent</a></li>
+                                <li><a class="dropdown-item" href="#">Data Analysis</a></li>
+                                <li><a class="dropdown-item" href="#">Computer Science</a></li>
+                                <li><a class="dropdown-item" href="#">Need Idea here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html"">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Blog</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
         </nav>
 
         <!-- CONTAINERS IN BOOTSTRAP: https://getbootstrap.com/docs/4.0/layout/overview/#containers -->
@@ -84,7 +92,7 @@
 
                 <h2 class="imageNav-header">
                     
-                    Visualizations
+                    Projects
                 
                 </h2>
 
