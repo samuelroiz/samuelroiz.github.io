@@ -1,9 +1,27 @@
+/* THIS SECTIOn FOCUS ON PADDING OR MARGIN MEANING SHIFTING IMAGES, NAVBAR, AND OTHERS AROUND */
+/* keeps navbar spacing each other */
+.navbar-nav > li{
+	padding-left:25px;
+	padding-right:25px;
+}
+/* TEXT IN FIRST IMAGE */
+.centered {
+    position: absolute;
+    top: 35%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    color: #d1dbdb;
+    font-family: Copperplate, "Copperplate Gothic Light", fantasy; 
+    font-size: 40px;
+}
+.darkened-image {
+    filter: brightness(85%);
+}
 .navbar-image{
+	height: 50px;
 	/* put value of image height as your need */
 	float: none;
-	margin-right: 10px;
-    width: 14%;
-	height: 14%;
+	margin-right: 7px;
 }
 .nav-link:hover {
     color:#000000;
@@ -11,10 +29,6 @@
 .navbar-brand, .nav-link{
 	color: #a6acac
 }
-/* .nav-item{
-     text-align: center; 
-     right: 70px; 
-} */
 .img-fluid {
     position: relative;
     /* bottom: 50%; */
