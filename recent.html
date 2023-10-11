@@ -12,14 +12,14 @@
 
         <title>
             
-            Sam's Portfolio
+            Recent Activity
 
         </title>
 
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 
-        <link rel="stylesheet" type="text/css" href="main_page.css">
+        <link rel="stylesheet" type="text/css" href="recent_page.css">
 	
     </head>
 
@@ -45,7 +45,7 @@
                                 <li><a class="dropdown-item" href="recent.html">Recent</a></li>
                                 <li><a class="dropdown-item" href="#">Data Analysis</a></li>
                                 <li><a class="dropdown-item" href="#">Cyber Security</a></li>
-                                <li><a class="dropdown-item" href="#">Web Developer</a></li>
+                                <li><a class="dropdown-item" href="web_developer_projects.html">Web Developer</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
@@ -60,102 +60,57 @@
         </nav>
 
         <!-- CONTAINERS IN BOOTSTRAP: https://getbootstrap.com/docs/4.0/layout/overview/#containers -->
+        <!-- Background image -->
+        <div class="bg-image d-flex justify-content-center align-items-center first-image">
+        </div>
 
         <div class="container">
 
-        <section class="row">
-
-            <div class="col-lg-7 col-md-12">
-
-            <div class="description-content">
-
-                <!-- HR is underline -->
-                <hr>
-
-                <img class="image-left" src="assets/images/paris_night.jpg" alt="Sam at Paris" style="float: left">
-
-                <p>
-                    Building a dashboard and create individual pages for each plot and a means by which it can navigate between them. These pages will contain the visualizations and their corresponding explanations. It will also have a landing page, a page where it can see a comparison of all of the plots, and another page where it can view the data used to build them
-                </p>
-
-            </div>
-
-            </div>
-
-<!-- Offsetting Col: https://getbootstrap.com/docs/4.0/layout/grid/#offsetting-columns -->
-<!-- col-lg-5 col-md-12 etc. -->
-            <div class="col-lg-5 col-md-12">
-
-            <section id="imageNav-area">
-
-                <div class="imageNav-content">
-
-                <h2 class="imageNav-header">
+            <section class="row">
+    
+                <div class="col-lg-7 col-md-12">
+    
+                    <div class="description-content">
+        
+                        <!-- HR is underline -->
+                        <h2 class="text-hover">Web Visualizations Dashboard</h2>
+                        <hr>
+                        <a href="https://samuelroiz.github.io/Web_Visualization_Dashboard/index.html" alt="Web Visualizations Dashboard"> 
+                            <img src="assets/images/web_visualization_dashboard.png" class="picture-hover project-images img-thumbnail"> 
+                        </a>
+                        <img src="images_for_readme/excel_logo.png" class="tiny-image">
+                        <img src="images_for_readme/python_logo.jpg" class="tiny-image">
+                        <img src="images_for_readme/css_java_jss_logo.jpg" class="tiny-image">
+                        <img src="images_for_readme/matlab_logo.jpg" class="tiny-image">
+                        <p class="fs-5">
+                            The project involves constructing a data dashboard with dedicated pages for weather visualizations and explanations. Users can seamlessly navigate between pages, compare multiple plots on a single page, and access the raw data. This interactive and informative platform facilitates weather data analysis, encompassing multiple countries and cities with temperature and wind information.
+                        </p>    
+                    </div>
                     
-                    Recent Activity
-                
-                </h2>
 
-                <hr />
-
-                <div class="container">
-
-                    <div class="row">
-
-                    <div class="col-6">
-
-                        <a href="crypto_analysis.html">
-
-                            <img src="assets/images/crypto_over_the_years.png" alt="Crypto Analysis", title="Crypto Analysis" class="imageNav-photo img-hover">
-
+                    <div class="description-content">
+        
+                        <!-- HR is underline -->
+                        <h2>Crypto Analysis</h2>
+                        <hr>
+                        <a href="crypto_analysis.html" alt="Crypto Analysis"> 
+                            <img src="assets/images/crypto_over_the_years.png" class="picture-hover project-images img-thumbnail"> 
                         </a>
-
+                        <img src="images_for_readme/excel_logo.png" class="tiny-image">
+                        <img src="images_for_readme/python_logo.jpg" class="tiny-image">
+                        <img src="images_for_readme/css_java_jss_logo.jpg" class="tiny-image">
+                        <img src="images_for_readme/matlab_logo.jpg" class="tiny-image">
+                        <img src="images_for_readme/elephant_sql_logo.png" class="tiny-image">
+                        <p class="fs-5">
+                            
+                        </p>    
                     </div>
-
-                    <div class="col-6">
-                        
-                        <a href="humidity.html">
-
-                            <img src="assets/images/Latitude_Vs_Humidity.png" alt="Latitude versus Humidity", title="Latitude versus Humidity" class="imageNav-photo img-hover">
-
-                        </a>
-
-                    </div>
-
-                    <div class="col-6">
-
-                        <a href="cloudiness.html">
-
-                            <img src="assets/images/Latitude_Vs_Cloudiness.png" alt="Latitude versus Cloudiness", title="Latitude versus Cloudiness", class="imageNav-photo img-hover">
-
-                        </a>
-
-                    </div>
-
-                    <div class="col-6">
-
-                        <a href="wind_speed.html">
-
-                            <img src="assets/images/Latitude_Vs_Wind_Speed.png" alt="Latitude versus Wind Speed", title="Latitude versus Wind Speed", class="imageNav-photo img-hover">
-
-                        </a>
-
-                    </div>
-
-                    </div>
-
+    
                 </div>
-
-                </div>
-
+            
             </section>
 
-            </div>
-
-        </section>
-
         </div>
-
 
         <footer>
         <div class="footer">copyright &copy; 2023 Samuel Roiz. All rights reserved.</div>
@@ -179,4 +134,3 @@
         
     </body>
 </html>
-
