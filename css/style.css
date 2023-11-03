@@ -101,10 +101,11 @@ p {
 }
 
 /*header section*/
-.hero_area {
+.hero_area { 
+  /* background-color: #2fc4bd; */
+  background-image: url(../assets/images/sincerely-media-qYsmxkxZtbM-unsplash.jpg);
+  background-size: cover;
   height: 100vh;
-  background-color: #2fc4bd;
-  /* background-image: url("https://i0.wp.com/www.gingerandcilantro.com/wp-content/uploads/2015/07/pawprints-beach-pawprintsnetwork.jpg"); */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -114,6 +115,17 @@ p {
           flex-direction: column;
   position: relative;
 }
+/* .hero_area { */
+  /* height: 100vh; */
+  /* background-color: #2fc4bd; */
+  /* background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNv69pyZkSbgilAseo-bTqRPr5eHwrD_V6hg&usqp=CAU"); */
+  /* background-repeat: no-repeat; This will prevent the image from repeating */
+  /* background-size: cover; This will make sure the image covers the whole div */
+  /* background-position: center; This will center your image in the div */
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* position: relative; */
+/* } */
 .img-fluid {
   position: relative;
   /* bottom: 50%; */
@@ -552,12 +564,44 @@ a:focus {
           justify-content: center;
 }
 
-.about_section .img-box img {
+.about_section {
   width: 100%;
 }
 
+.adopted-img-box {
+  /* Ensure that this container is wide enough to fit both images and the margin */
+  width: 100%; /* Adjust this if needed */
+  text-align: center; /* This centers the images in the container */
+}
+
+/*/* for two photos */ /*
+/* .adopted-img-box img { */
+  /* height: auto;  */
+  /* width: 48%;  */
+  /* display: inline-block;  */
+  /* margin-right: 2%;  */
+/* } */
+
+/* for four photos */
+.adopted-img-box img {
+  height: auto; /* maintain aspect ratio */
+  width: 23%; /* adjusted to fit four images within the container */
+  display: inline-block;
+  margin-right: 1%; /* spacing between the images, adjust as needed */
+}
+
+/* Remove margin from the last image to avoid unnecessary horizontal scrolling */
+.adopted-img-box img:last-child {
+  margin-right: 0;
+}
+/* .adopted-img-box img { */
+  /* height: 30%; */
+  /* width: 50%; */
+/* } */
+
 .client_section {
-  background-image: url(../images/client-bg.jpg);
+  /* background-image: url(../images/client-bg.jpg); */
+  background-image: url(../assets/images/willian-justen-de-vasconcellos-jUCQRQeRs3k-unsplash.jpg);
   background-size: cover;
   color: #ffffff;
   position: relative;
