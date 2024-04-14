@@ -1,0 +1,22 @@
+/* This will style the outer container */
+.centered-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Take at least the full height of the viewport */
+    width: 100%; /* Take the full width of the viewport (this is default but can be specified for clarity) */
+}
+
+/* Styling for the image link for additional control */
+.image-link {
+    display: block; /* Ensures the link behaves as a block element, taking up the full space of its contents */
+    max-width: 80%; /* Optional: constrains the image to not exceed 80% of its container width */
+}
+
+/* Styling for the image itself to make it bigger and well-presented */
+.image-link img {
+    display: block; /* Removes any default inline spacing */
+    max-width: 100%; /* Ensures the image is responsive and does not overflow its anchor */
+    height: auto; /* Keeps the aspect ratio intact */
+    width: 500px; /* Adjust this value to make the image bigger or smaller */
+}

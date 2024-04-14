@@ -1,0 +1,32 @@
+/* style.css */
+body {
+    font-family: Arial, sans-serif; /* Sets the default font */
+    line-height: 1.6; /* Sets line spacing */
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4; /* Light grey background */
+}
+.container {
+    width: 80%; /* Sets the width of the container */
+    margin: auto; /* Centers the container */
+    overflow: hidden; /* Clears floats */
+    background: white; /* White background for the content */
+    padding: 20px; /* Padding around the content */
+    box-shadow: 0 0 10px #ccc; /* Adds a subtle shadow to the container */
+}
+header {
+    background: #333; /* Dark background for the header */
+    color: #fff; /* White text color */
+    padding: 10px 0; /* Padding above and below the text */
+    text-align: center; /* Centers the text */
+}
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
