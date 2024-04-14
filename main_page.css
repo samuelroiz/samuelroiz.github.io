@@ -58,7 +58,14 @@ button:focus {
 	padding: 10px 30px 5px;
 	color: black;
 	background-color: white;
+	
 }
+
+.image-left {
+    float: left;
+    margin-right: 20px;  /* Adds space on the right side of the image */
+}
+
 .imageNav-content {
 	margin-top: 40px;
 	margin-bottom: 20px;
