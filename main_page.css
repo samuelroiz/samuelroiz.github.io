@@ -32,6 +32,36 @@ body{
 }
 
 
+.centered-section {
+    width: 80%; /* Control width to your preference */
+    margin: 0 auto; /* Auto margins for horizontal centering */
+    padding: 50px 0; /* Add vertical padding for visual spacing */
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    justify-content: center; /* Center vertically inside the section */
+    align-items: center; /* Center horizontally inside the section */
+    text-align: center; /* Center text inside the section */
+    position: relative; /* Ensure this is positioned relative for absolute children */
+    min-height: 100vh; /* Optional: makes section at least as tall as the viewport */
+}
+
+.centered-section div {
+    width: 100%; /* Ensures div takes up all horizontal space within the section */
+}
+
+.centered-section div p {
+	font-size: larger;
+	color:#000000;
+}
+
+.text-up {
+    margin-top: -200px;
+}
+
+.text-up-h2 {
+	margin-bottom: 30px; /* Adjust this value to control spacing after the h2 */
+}
+
 /* Media Queries */
 @media (max-width: 900px){
 .navbar-expand-lg{
