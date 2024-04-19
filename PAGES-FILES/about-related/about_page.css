@@ -52,13 +52,13 @@ img{
 }
 
 .img-darken {
-    filter: brightness(50%);
+    filter: brightness(30%);
 }
 
 .overlay-text {
     position: absolute;
-    top: 60px;  /* Keeps the top position the same */
-    left: 90px; /* Moves the text further to the right */
+    top: 10px;  /* Keeps the top position the same */
+    left: 60px; /* Moves the text further to the right */
     color: white;
     font-size: 60px;
     font-weight: bold;
@@ -68,7 +68,7 @@ img{
 
 .text-content {
     position: absolute;
-    top: 230px; /* Start below the overlay text */
+    top: 120px; /* Start below the overlay text */
     left: 90px;
     right: 90px; /* Ensures padding from both sides */
     padding: 20px;

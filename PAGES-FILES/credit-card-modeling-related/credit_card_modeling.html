@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>credit-risk</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+
+  <link rel="stylesheet" type="text/css" href="CSS-FILES/dog-related/css/bootstrap.css" />
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous"> -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" type="text/css" href="credit_card_modeling.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Righteous&display=swap" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="../../CSS-FILES/dog-related/css/style.css" rel="stylesheet" />
+    <!-- responsive style -->
+    <link href="../../CSS-FILES/dog-related/css/responsive.css" rel="stylesheet" />
+
+</head>
+<title>Credit Risk Model</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            background-color: #343a40;
+            color: white;
+            display: flex;
+            justify-content: center;
+            padding: 0.5rem 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 1020;
+        }
+        .navbar-nav {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            align-items: center;
+        }
+        .nav-item {
+            margin: 0 10px;
+        }
+        .nav-link {
+            color: white;
+            text-decoration: none;
+        }
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            background-color: #343a40;
+            box-shadow: 0 0.5rem 1rem rgba(0,0,0,.15);
+            padding: 0.5rem 0;
+        }
+        .dropdown-menu .dropdown-item {
+            color: white;
+            text-decoration: none;
+            display: block;
+            padding: 0.25rem 1.5rem;
+        }
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+        .nav-brand a img {
+            height: 40px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container-fluid">
+            <ul class="navbar-nav flex-nowrap">
+                <li class="nav-brand">
+                    <a href="../../index.html">
+                        <img class="navbar-image" src="../../assets/images/penny_head.png" alt="Logo">
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#">
+                        Projects
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="recent.html">Recent</a></li>
+                        <li><a class="dropdown-item" href="../data-analysis-related/data_analysis.html">Data Analysis</a></li>
+                        <li><a class="dropdown-item" href="../cyber-security-related/cyber_security.html">Cyber Security</a></li>
+                        <li><a class="dropdown-item" href="../web-related/web_developer_projects.html">Web Developer</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../about-related/about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../dog-related/dog-blog.html">Paws for Alohas</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</body>
+<body class="stackedit">
+  <div class="stackedit__html"><h1 id="contents">Contents</h1>
+<h2 id="introduction">Introduction</h2>
+<ul>
+<li><strong>1.1 What is Curve Fitting</strong></li>
+<li><strong>1.2 My Project Scenario</strong></li>
+</ul>
+<h2 id="data">Data</h2>
+<ul>
+<li><strong>2.1 Outcome</strong>
+<ul>
+<li><strong>2.1.1 Outcome and Age of Accounts</strong></li>
+<li><strong>2.1.2 Sample Weight</strong></li>
+</ul>
+</li>
+<li><strong>2.2 Full Table</strong></li>
+</ul>
+<h2 id="graphs">Graphs</h2>
+<ul>
+<li><strong>3.1 Age of Accounts</strong>
+<ul>
+<li><strong>3.1.1 Summary of Age of Accounts</strong></li>
+</ul>
+</li>
+<li><strong>3.2 Credit Card Balance to Loan</strong>
+<ul>
+<li><strong>3.2.1 Summary of Credit Card Balance to Loan</strong></li>
+</ul>
+</li>
+<li><strong>3.3 Auto Balance Ratio</strong>
+<ul>
+<li><strong>3.3.1 Summary of Auto Balance Ratio</strong></li>
+</ul>
+</li>
+<li><strong>3.4 Number of Accounts</strong>
+<ul>
+<li><strong>3.4.1 Summary of Number of Accounts</strong></li>
+</ul>
+</li>
+<li><strong>3.5 Number of Accounts Ever 30 Days Past Due</strong></li>
+<li><strong>3.6 Number of Accounts Ever 60 Days Past Due</strong></li>
+<li><strong>3.7 Number of Accounts Ever 90 Days Past Due</strong>
+<ul>
+<li><strong>3.7.1 Summary of Accounts Ever Days Past Due</strong></li>
+</ul>
+</li>
+<li><strong>3.8 Number of Inquiries Last 6 Months</strong></li>
+<li><strong>3.9 Number of Inquiries Last 12 Months</strong>
+<ul>
+<li><strong>3.9.1 Summary of Inquiries</strong></li>
+</ul>
+</li>
+<li><strong>3.10 Number of Mortgages</strong>
+<ul>
+<li><strong>3.10.1 Summary of Number of Mortgages</strong></li>
+</ul>
+</li>
+</ul>
+<h2 id="results">Results</h2>
+<ul>
+<li><strong>4.1 Interesting Observations</strong></li>
+<li><strong>4.2 Challenges Encountered</strong></li>
+<li><strong>4.3 Lessons Learned</strong></li>
+</ul>
+<h2 id="data-1">Data</h2>
+<p>Data was obtained from people’s accounts using random numbers. You are highly encouraged to visit <a href="http://www.wisc.edu/writing/Handbook/ScienceReport.html">this website</a> for more information.</p>
+<h2 id="introduction-1">1. Introduction</h2>
+<h3 id="what-is-curve-fitting">1.1 What is Curve Fitting</h3>
+<p>Curve fitting is one of the most widely used analytical tools in applications such as Matlab, Origin, Excel, etc. It examines the relationship between one or more predictors and a response variable with the goal of identifying a “best fit” model. This model helps us predict and determine which variables are more or less effective. For instance, suppose I work for a bank with 10 customers who have taken out loans and own credit cards; only 4 of these customers repaid their loans. The bank needs to identify which customers are less likely to repay their loans. By analyzing variables such as the number of credit cards held and frequency of late payments beyond 30 days, we can develop a curve-fitting model to identify trustworthy customers.</p>
+<h3 id="my-project-scenario">1.2 My Project Scenario</h3>
+<p>A bank asked me to develop a model to help determine the trustworthiness of loan applicants. The data provided was extensive and disorganized, necessitating significant cleanup and the creation of multiple variables. The primary variables I used included the outcome, Age of Account, Credit Card Balance to Loan, Auto Balance Ratio, Number of Accounts, Number of Accounts Ever 30 Days Past Due, Number of Accounts Ever 60 Days Past Due, Number of Accounts Ever 90 Days Past Due, Number of Inquiries Last 6 Months, and Number of Inquiries Last 12 Months. The first step was to analyze the outcome, which represented the number of people who did and did not repay their loans. To model these scenarios, I utilized examples from credit card data models and wrote a code to generate random numbers.</p>
+<h2 id="data-analysis">2. Data Analysis</h2>
+<h3 id="outcome">2.1 Outcome</h3>
+<p>The initial data set received from the bank included outcomes for 7,500 accounts, but it was presented in a very cluttered format. I employed a frequency table to simplify this data, reducing thousands of lines into a more manageable two-line representation.</p>
+<h4 id="outcome-and-age-of-accounts">2.1.1 Outcome and Age of Accounts</h4>
+<p>This summary table combines the variables of outcome and age of accounts. Applying a frequency code helped to identify patterns, such as the correlation between younger accounts (3 months old) and non-payment. For example, there was one account that had an outcome of zero (non-payment) and was only three months old.</p>
+<h4 id="table-1-outcome">Table 1: Outcome</h4>
+
+<table>
+<thead>
+<tr>
+<th>Outcome</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+</tr>
+<tr>
+<td>1</td>
+</tr>
+<tr>
+<td>0</td>
+</tr>
+<tr>
+<td>1</td>
+</tr>
+<tr>
+<td>0</td>
+</tr>
+<tr>
+<td>1</td>
+</tr>
+<tr>
+<td>0</td>
+</tr>
+<tr>
+<td>1</td>
+</tr>
+<tr>
+<td>1</td>
+</tr>
+<tr>
+<td>1</td>
+</tr>
+<tr>
+<td>0</td>
+</tr>
+<tr>
+<td>1</td>
+</tr>
+<tr>
+<td>0</td>
+</tr>
+<tr>
+<td>1</td>
+</tr>
+<tr>
+<td>0</td>
+</tr>
+<tr>
+<td>1</td>
+</tr>
+<tr>
+<td>0</td>
+</tr>
+<tr>
+<td>0</td>
+</tr>
+<tr>
+<td>0</td>
+</tr>
+<tr>
+<td>1</td>
+</tr>
+<tr>
+<td>1</td>
+</tr>
+<tr>
+<td>1</td>
+</tr>
+<tr>
+<td>0</td>
+</tr>
+<tr>
+<td>0</td>
+</tr>
+<tr>
+<td>1</td>
+</tr>
+<tr>
+<td>0</td>
+</tr>
+<tr>
+<td>1</td>
+</tr>
+<tr>
+<td>0</td>
+</tr>
+<tr>
+<td>1</td>
+</tr>
+<tr>
+<td>0</td>
+</tr>
+<tr>
+<td>1</td>
+</tr>
+<tr>
+<td>0</td>
+</tr>
+<tr>
+<td>1</td>
+</tr>
+<tr>
+<td>0</td>
+</tr>
+<tr>
+<td>1</td>
+</tr>
+<tr>
+<td>0</td>
+</tr>
+<tr>
+<td>1</td>
+</tr>
+<tr>
+<td>0</td>
+</tr>
+<tr>
+<td>1</td>
+</tr>
+</tbody>
+</table><p><img src="https://github.com/samuelroiz/Credit-Card-Modeling-2020/blob/main/images/table-2-credit-card-modeling.jpg?raw=true" alt="Frequency of Outcomes"></p>
+<p><img src="https://github.com/samuelroiz/Credit-Card-Modeling-2020/blob/main/images/table-3-credit-card-modeling.jpg?raw=true" alt="Outcome and Age of Accounts"></p>
+<h4 id="sample-weight">2.1.2 Sample Weight</h4>
+<p>Since my dataset is large, I need to reduce it. However, reducing the data can skew the results. To maintain accuracy, I use a sample weight, which helps preserve the original ratio of the data. For instance, in the original dataset, there are 5,000 ‘ones’ and 2,500 ‘zeros’, indicating more ‘ones’ than ‘zeros’. If I reduce the dataset to a total of 270 entries, I would adjust it to have an equal number of ‘ones’ and ‘zeros’, both at 85, with a sample weight of 7 applied only to the ‘ones’. This means that when generating a table of outcomes for ‘ones’, I multiply the variables by 7 to reflect their true proportion in the original data.</p>
+<p><img src="https://github.com/samuelroiz/Credit-Card-Modeling-2020/blob/main/images/table-4-credit-card-modeling.jpg?raw=true" alt="Without Sample Weight"></p>
+<p><img src="https://github.com/samuelroiz/Credit-Card-Modeling-2020/blob/main/images/table-5-credit-card-modeling.jpg?raw=true" alt="With Sample Weight"></p>
+<h4 id="full-table">2.2 Full Table</h4>
+<p>We have data on over twenty-eight variables. Below is a summary of the full table that we compiled from the bank data.</p>
+<p><img src="https://github.com/samuelroiz/Credit-Card-Modeling-2020/blob/main/images/table-6-credit-card-modeling.jpg?raw=true" alt="Full Table"></p>
+<p><img src="https://github.com/samuelroiz/Credit-Card-Modeling-2020/blob/main/images/table-7-credit-card-modeling.jpg?raw=true" alt="Full Table"></p>
+<h2 id="graphs-1">3. Graphs</h2>
+<p>Since I have gathered all of my data, applied sample weights, and executed frequency distribution analyses, I now need to create graphs to compare the variables and identify the best fit.</p>
+<h3 id="age-of-accounts">3.1 Age of Accounts</h3>
+<p><img src="https://github.com/samuelroiz/Credit-Card-Modeling-2020/blob/main/images/figure-1-credit-card-modeling.jpg?raw=true" alt="Noisy Age of Account in month"></p>
+<p>The graph, as you can see above, is somewhat messy. It displays numerous spikes after 170 months, which are typically considered noise. To improve clarity and accuracy, I need to trim down the maximum range of the age of accounts.</p>
+<p>After reducing the spikes, the graph becomes clearer. This graph indicates that accounts at fifty months have a higher probability of defaulting. However, this information alone is insufficient to determine trustworthiness based solely on the age of accounts. The subsequent graphs will provide further insights to help determine whom we can trust.</p>
+<p><img src="https://github.com/samuelroiz/Credit-Card-Modeling-2020/blob/main/images/figure-2-credit-card-modeling.jpg?raw=true" alt="Age of Accounts"></p>
+<h3 id="summary-of-age-of-accounts">3.1.1 Summary of Age of Accounts</h3>
+<p>The age of an account significantly impacts the risk profile presented to the bank. Older accounts demonstrate reliability and present less risk as they have a history of being in good standing and making payments on time. Conversely, younger accounts pose a higher risk as they have less history and the account holders have less to lose, making the potential for default higher.</p>
+<h3 id="credit-card-balance-to-loan">3.2 Credit Card Balance to Loan</h3>
+<p>Credit card consolidation loans allow individuals to combine several credit card debts into a single loan with a fixed interest rate and term, potentially saving money and simplifying debt repayment.</p>
+<p><strong>Figure 3:</strong> Shows a trend where accounts with at least a fifty percent credit card balance to loan ratio exhibit a higher likelihood of non-payment, increasing by at least ten percent. Noise reduction is necessary for clearer analysis.</p>
+<p><strong>Figure 4:</strong> After noise reduction, the data becomes more accurate and provides a reliable indication of which accounts are at risk.<br>
+<img src="https://github.com/samuelroiz/Credit-Card-Modeling-2020/blob/main/images/figure-3-credit-card-modeling.jpg?raw=true" alt="Noisy Credit Card Balance to Loan"><br>
+<img src="https://github.com/samuelroiz/Credit-Card-Modeling-2020/blob/main/images/figure-4-credit-card-modeling.jpg?raw=true" alt="Credit Card Balance to Loan"></p>
+<h4 id="summary-of-credit-card-balance-to-loan">3.2.1 Summary of Credit Card Balance to Loan</h4>
+<p>The risk associated with the credit card balance to loan ratio starts at five percent and increases progressively. As the ratio rises, so does the risk, peaking at fourteen percent once it exceeds a hundred percent. This incremental rise underscores the need for careful monitoring of this ratio.</p>
+<h3 id="auto-balance-ratio">3.3 Auto Balance Ratio</h3>
+<p>This metric is crucial as it informs credit scoring agencies about the percentage of available credit utilized by an individual. Best practices recommend using no more than 30 percent of your credit limits to maintain good credit health.</p>
+<p><strong>Figure 5:</strong> Illustrates that accounts with lower auto balance ratios are considered riskier. Accounts with negative ratios indicate no credit usage and maximum credit availability, which is viewed as a lower risk.</p>
+<p><img src="https://github.com/samuelroiz/Credit-Card-Modeling-2020/blob/main/images/figure-5-credit-card-modeling.jpg?raw=true" alt="Auto Balance Ratio"></p>
+<h4 id="summary-of-auto-balance-ratio">3.3.1 Summary of Auto Balance Ratio</h4>
+<p>The auto balance ratio is a significant risk indicator. Accounts with a positive ratio are considered risky, particularly those with ratios between one to fifty, which are deemed to have a risk of ten to twelve percent. However, compared to other variables, the auto balance ratio is not the most reliable risk predictor unless the ratio falls within this specific range.</p>
+<h4 id="number-accounts">3.4 Number Accounts</h4>
+<p>The number of accounts represents how many accounts the client has with banks. We will examine if the number of accounts influences the likelihood of the client repaying the loan. The first graph (Figure 6) is quite noisy towards the end, indicating that the noise needs to be suppressed for clearer analysis. The second graph is much clearer. Accounts ranging from forty to forty-five exhibit a higher risk compared to others. Although all have at least a five percent probability of default, the risk significantly increases by three percent for every ten additional accounts.</p>
+<p><img src="https://github.com/samuelroiz/Credit-Card-Modeling-2020/blob/main/images/figure-6-credit-card-modeling.jpg?raw=true" alt="Number of Accounts"></p>
+<p><img src="https://github.com/samuelroiz/Credit-Card-Modeling-2020/blob/main/images/figure-7-credit-card-modeling.jpg?raw=true" alt="Number Accounts"></p>
+<h4 id="summary-of-number-of-accounts">3.4.1 Summary of Number of Accounts</h4>
+<p>The summary of the Number of Accounts indicates that the more accounts a client holds, the slower the risk increases. This gradual increase is due to the added responsibilities associated with managing multiple accounts, and the uncertainty regarding their stability. Conversely, the fewer accounts a client has, the more risk the bank can assume, as the client has fewer financial obligations that could impact their financial stability. The risk starts at five percent for one to four accounts, climbs to twenty percent for forty to forty-five accounts, and reaches an even higher risk level of twenty to forty-eight percent. Beyond fifty accounts, the risk becomes very high due to insufficient data on such accounts.</p>
+<h3 id="number-of-accounts-ever-30-days-past-due">3.5 Number of Accounts Ever 30 Days Past Due</h3>
+<p>The Number of Accounts Ever 30 Days Past Due metric reflects how often accounts have been late with payments by more than 30 days. Accounts with zero late payments post a low default risk of only four percent. However, as the frequency of late payments increases, so does the probability of default. For example, an account that has been late nine times shows a dramatically higher default probability of thirty-six percent, underscoring the significant impact that payment history has on credit risk.</p>
+<p><img src="https://github.com/samuelroiz/Credit-Card-Modeling-2020/blob/main/images/figure-8-credit-card-modeling.jpg?raw=true" alt="Number of Acc. 30 Days Past Due"></p>
+<h3 id="number-of-accounts-ever-60-days-past-due">3.6 Number of Accounts Ever 60 Days Past Due</h3>
+<p>The graph for the Number of Accounts Ever 60 Days Past Due is similar to that for 30 days but shows a significantly higher risk as the frequency of late payments increases. Notably, the risk drops to zero because no account has been late thirteen times. However, it’s crucial to also consider the data for 90 days past due for a complete assessment.</p>
+<p><img src="https://github.com/samuelroiz/Credit-Card-Modeling-2020/blob/main/images/figure-9-credit-card-modeling.jpg?raw=true" alt="Number of Acc. 60 Days Past Due"></p>
+<h3 id="number-of-accounts-ever-90-days-past-due">3.7 Number of Accounts Ever 90 Days Past Due</h3>
+<p>Similarly, for accounts that have been past due for ninety days, if an account has nine past due incidences, the risk of non-payment is at least twenty-five percent. For those that have been late fourteen times or more, the probability of default escalates dramatically, reaching up to one hundred percent. These metrics are crucial for determining financial stability.<br>
+<img src="https://github.com/samuelroiz/Credit-Card-Modeling-2020/blob/main/images/figure-10-credit-card-modeling.jpg?raw=true" alt="Number of Acc. 90 Days Past Due"></p>
+<h4 id="summary-of-accounts-ever-days-past-due">3.7.1 Summary of Accounts Ever Days Past Due</h4>
+<p>Analyzing the Days Past Due (DPD) data, the risk assessment for 30 DPD advises against trusting any clients with more than five late payments; the risk jumps significantly after fifteen late payments, reaching an eighty percent increase in risk. For 60 days, the principle remains, but with fewer occurrences: no trust should be extended beyond zero late payments, as even one instance raises the risk by five percent, escalating to seventeen percent at three late payments.</p>
+<h3 id="number-of-inquiries-last-6-months">3.8 Number of Inquiries Last 6 Months</h3>
+<p>Credit inquiries can significantly impact those with few accounts or a short credit history. Statistically, individuals with six or more inquiries on their credit reports are much more likely to declare bankruptcy than those with no inquiries. The risk associated with inquiries is substantial: starting at seven percent with one inquiry and skyrocketing to thirty percent with just six additional inquiries.</p>
+<p><img src="https://github.com/samuelroiz/Credit-Card-Modeling-2020/blob/main/images/figure-11-credit-card-modeling.jpg?raw=true" alt="Number Inquiries Last 6 months"></p>
+<h3 id="number-of-inquiries-last-12-months">3.9 Number of Inquiries Last 12 Months</h3>
+<p>The pattern for the last 12 months of inquiries mirrors that of the last six months. The graph should be refined to focus only on the first twelve accounts to minimize noise and enhance clarity. However, once an account has been late twelve times, the associated risk soars to a staggering sixty percent.</p>
+<p><img src="https://github.com/samuelroiz/Credit-Card-Modeling-2020/blob/main/images/figure-12-credit-card-modeling.jpg?raw=true" alt="Figure 12"></p>
+<h4 id="summary-of-inquiries">3.9.1 Summary of Inquiries</h4>
+<p>The summary of these two inquiry variables shows it is highly accurate in identifying clients who pose a significant risk. It is evident that we must exercise caution with even a single inquiry, where the risk starts at five percent. The risk then increases drastically by three percent every six months. Over twelve months, the risk rises by ten percent for every six inquiries, reaching a forty percent increase when there are ten inquiries.</p>
+<h3 id="number-of-mortgages">3.10 Number of Mortgages</h3>
+<p><img src="https://github.com/samuelroiz/Credit-Card-Modeling-2020/blob/main/images/figure-13-credit-card-modeling.jpg?raw=true" alt="Number of Mortgages"></p>
+<h4 id="summary-of-number-of-mortgages">3.10.1 Summary of Number of Mortgages</h4>
+<p>The risk associated with the number of mortgages starts at five percent and increases gradually up to twenty-six percent. It is clear that the more mortgages an account holds, the higher the financial risk to the bank. This is because with each additional mortgage, the account holder has more loans to repay, increasing their financial burden. Conversely, fewer mortgages mean less risk.</p>
+<h2 id="results-1">4 Results</h2>
+<p>In this section, I will discuss my thoughts on the project, including the challenges, the fun aspects, and the mistakes encountered.</p>
+<h3 id="interesting">4.1 Interesting</h3>
+<p>What is fascinating about curve fitting is the variety of ways it can be applied. As long as the data and tables are correctly managed, you can adapt the method to fit different scenarios. Curve fitting is a compelling method; it appears simple yet can be quite complex to execute. The process is lengthy, and I found it particularly interesting because I am accustomed to producing graphs quickly. It is also versatile, allowing applications in diverse scenarios, such as estimating the number of people who consume eggs. This flexibility makes it an enjoyable and exploratory method.</p>
+<h3 id="challenges">4.2 Challenges</h3>
+<p>I faced numerous challenges. The first was knowing where to start, as graphing is impossible without data. Organizing the data was the most challenging part because with 7,500 accounts and 28 variables (totaling 210,000 data points), it was overwhelming initially. Applying the frequency table code also proved difficult as I couldn’t figure out how to use the <code>tabulate()</code> function properly and had to find an alternative method. Time was another significant challenge; I often chose less efficient methods when quicker options were available. Additionally, learning to use LaTeX was tricky, especially in managing the order of figures, which tended to move around in the document. I had to use the <code>\float barrier</code> to prevent this.</p>
+<h3 id="learned">4.3 Learned</h3>
+<p>I am proud of what I’ve learned from this project. While I enhanced my curve fitting skills, I also acquired many valuable techniques applicable beyond using MATLAB. If asked to apply curve fitting in another software, I am confident in starting immediately due to my solid understanding of the basics. Knowing the method is crucial before learning the software; understanding the theoretical foundation helps make the practical application more intuitive. This project reinforced my appreciation for MATLAB’s straightforward, understandable approach.</p>
+</div>
+</body>
+
+<!-- info section -->
+<section class="info_section  layout_padding2">
+    <div class="container">
+    <div class="social_container">
+        <div class="social_box">
+        <a href="https://www.facebook.com/profile.php?id=61554268507006">
+            <img src="../../assets/icon-images/fb.png" alt="Paws for Alohas FB">
+        </a>
+        <!-- <a href="">
+            <img src="../../assets/icon-images/twitter.png" alt="">
+        </a> -->
+        <a href="https://www.linkedin.com/in/samuel-roiz/">
+            <img src="../../assets/icon-images/linkedin.png" alt="Samuel Roiz">
+        </a>
+        <a href="https://www.instagram.com/pawsforalohas/">
+            <img src="../../assets/icon-images/instagram.png" alt="Paws for Alohas IG">
+        </a>
+        <a href="">
+            <img src="../../assets/icon-images/youtube.png" alt="Coming SOON!">
+        </a>
+        </div>
+    </div>
+    <div class="contact_items" style="padding-left: 50px;">
+        <a href="https://www.google.com/maps/@48.8603518,2.3351734,17.42z?entry=ttu">
+        <div class="item ">
+            <div class="img-box ">
+            <img src="../../assets/icon-images/location.png" alt="">
+            </div>
+            <div class="detail-box">
+            <p>
+                Favorite Location
+            </p>
+            </div>
+        </div>
+        </a>
+        <a href="">
+        <div class="item ">
+            <div class="img-box ">
+            <img src="../../assets/icon-images/call.png" alt="">
+            </div>
+            <div class="detail-box">
+            <p>
+                Call +01 UNAVAILABLE
+            </p>
+            </div>
+        </div>
+        </a>
+        <a href="">
+        <div class="item ">
+            <div class="img-box ">
+            <img src="../../assets/icon-images/mail.png" alt="">
+            </div>
+            <div class="detail-box">
+            <p>
+                samueljamesroiz@gmail.com
+            </p>
+            </div>
+        </div>
+        </a>
+    </div>
+    </div>
+    <div class="info_container ">
+    <div class="container">
+        <div class="row">
+        <!-- <div class="col-md-6 col-lg-3 ">
+            <h6>
+            About
+            </h6>
+            <p>
+                I really dug into math. I'm all about using my tech skills to tackle real-world problems. 
+                <br>
+                <br>Leadership? Got it. 
+                <br>Teamwork? Love it. 
+                <br>Python? Script it.
+                <br>SQL? Query it.
+                <br>
+                <br>When I'm not crunching data or solving puzzles, you can find me playing chess, hitting up CrossFit, or coaching. I'm also always on the lookout for cool short courses to boost my data and math skills even more. </p>
+        </div> -->
+        <div class="col-md-6 col-lg-3" style="padding-left: 50px;">
+            <h6>
+            Useful Link
+            </h6>
+            <div class="info_link-box">
+            <ul>
+                <li class="">
+                <a href="../../index.html">
+                    Home
+                </a>
+                </li>
+                <li>
+                <a href="../about-related/about.html">
+                    About
+                </a>
+                </li>
+                <li>
+                <a href="../dog-related/dog-blog.html">
+                    Paws For Alohas
+                </a>
+                </li>
+                <li>
+                <a href="https://www.linkedin.com/in/samuel-roiz/"">
+                    Contact
+                </a>
+                </li>
+            </ul>
+            </div>
+        </div>
+        <!-- <div class="col-md-6 col-lg-3 text-center">
+            <h6>
+            Bragging Rights
+            </h6>
+            <p>
+                Top 40 Wodapalooza 2024 
+            <br>
+                87th in the World in Crossfit Games 2016
+            <br>
+                Snatch 265 lb
+            <br>
+                Clean & Jerk 320+
+
+            </p>
+        </div> -->
+        <!-- <div class="col-md-6 col-lg-3 text-center">
+            <h6>
+            Certifcations
+            </h6>
+            <p>
+                Data Analytics and Visualization from USC University
+                <br>
+                CompTIA A+
+                <br>
+                CompTIA Network+ SOON!
+                <br>
+                CompTIA Security+ SOON!
+                <br>
+                CompTIA Server+ SOON!
+                <br>
+                CompTIA Project+ SOON!
+            </p>
+        </div> -->
+        </div>
+    </div>
+    </div>
+</section>
+
+<footer>
+<div class="footer">copyright &copy; 2024 Samuel Roiz. All rights reserved.</div>
+</footer>
+
+</html>

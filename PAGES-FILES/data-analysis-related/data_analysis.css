@@ -6,9 +6,7 @@ body{
 .navbar-brand, .nav-link, .dropdown-item{
 	color: #eaeeee
 }
-.navbar-brand:hover{
-	transform: rotate(180deg);
-}
+
 #navbar {
     position: fixed;
     top: 0px;
@@ -64,40 +62,12 @@ body{
     border-color:#030611;
     border-style: solid;
 }
-/* image related */
-.first-image
-{
-	background-image: url('assets/images/wall-e-studying.jpg');
-	background-size: cover; /* or "contain" depending on what you want */
-	background-position: center center;
-	background-repeat: no-repeat;
-	height: 75vh;
-}
-/* all project images */
-.project-images{
-	float: left;
-	/* width: 75%;
-	height: 75%; */
-}
 .tiny-image{
-	width: 5%; 
+	width: 6%; 
 	height: 5%; 
 }
-.picture-hover:hover{
-	border-color:#030611;
-	border-style: solid;
-}
-/* paragraph next to images */
-.description-content {
-	margin-top: 30px;
-	margin-bottom: 60px;
-	padding: 10px 30px 5px;
-	color: black;
-	background-color: white;
-}
-.h1{
-	margin-bottom:2.2em;
-	margin: 0px 10px; 
+.github-right {
+    padding-left: 100px;
 }
 /* footer related */
 .footer{
