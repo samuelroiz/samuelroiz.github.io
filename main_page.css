@@ -32,6 +32,44 @@ body{
 }
 
 
+.centered-section {
+    width: 80%; /* Control width to your preference */
+    margin: 0 auto; /* Auto margins for horizontal centering */
+    padding: 50px 0; /* Add vertical padding for visual spacing */
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    justify-content: center; /* Center vertically inside the section */
+    align-items: center; /* Center horizontally inside the section */
+    text-align: center; /* Center text inside the section */
+    position: relative; /* Ensure this is positioned relative for absolute children */
+    min-height: 100vh; /* Optional: makes section at least as tall as the viewport */
+}
+
+.centered-section div {
+    width: 100%; /* Ensures div takes up all horizontal space within the section */
+}
+
+.centered-section div p {
+	font-size: larger;
+	color:#000000;
+}
+
+.text-up {
+    margin-top: -200px;
+}
+
+.text-up-2 {
+    margin-top: -100px;
+}
+
+.text-up-2-h2 {
+	margin-bottom: 30px; /* Adjust this value to control spacing after the h2 */
+}
+
+.text-up-h2 {
+	margin-bottom: 30px; /* Adjust this value to control spacing after the h2 */
+}
+
 /* Media Queries */
 @media (max-width: 900px){
 .navbar-expand-lg{
@@ -58,7 +96,14 @@ button:focus {
 	padding: 10px 30px 5px;
 	color: black;
 	background-color: white;
+	
 }
+
+.image-left {
+    float: left;
+    margin-right: 20px;  /* Adds space on the right side of the image */
+}
+
 .imageNav-content {
 	margin-top: 40px;
 	margin-bottom: 20px;
@@ -101,6 +146,73 @@ p{
     border-color:#030611;
     border-style: solid;
 }
+
+.btn-box {
+justify-content: center;
+}
+
+.btn-box {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+	margin: 35px -5px 0 -5px;
+  }
+  
+  .btn-box a {
+	width: 175px;
+	margin: 5px;
+	text-align: center;
+  }
+  
+  .btn-box .btn-1 {
+	display: inline-block;
+	padding: 10px 0;
+	background-color: #2fc4bd;
+	color: #ffffff;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+	border: 1px solid #2fc4bd;
+	border-radius: 3px;
+	text-transform: uppercase;
+  }
+  
+  .btn-box .btn-1:hover {
+	background-color: transparent;
+	color: #2fc4bd;
+  }
+  
+  .btn-box .btn-2 {
+	display: inline-block;
+	padding: 10px 0;
+	background-color: #363636;
+	color: #ffffff;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+	border: 1px solid #363636;
+	border-radius: 3px;
+	text-transform: uppercase;
+	/* text-decoration: underline; Add underline on hover */
+  }
+  
+  .btn-box .btn-2:hover {
+	background-color: transparent;
+	color: #363636;
+  }
+
+
+  /* .btn-box {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	margin-top: 25px;
+  }
+
+  .btn-box a {
+	width: auto;
+  } */
+
 .footer{
     border-top-width: 4px;
     color: #000000;

@@ -81,6 +81,19 @@ body{
 	bottom: 0;
     float: none;
 }
+.footer-project {
+    border-top-width: 4px;
+    color: #000000;
+    min-height: 50px;
+    font-size: 12px;
+    text-align: center;
+    position: fixed;
+    padding-top: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    right: 0;   /* Positions the footer at the right edge of the viewport */
+    bottom: 0;  /* Keeps the footer at the bottom */
+}
 /* google slides */
 .google-slides-container{
     position: relative;
