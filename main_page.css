@@ -142,7 +142,7 @@ p{
 	font-family: Arial, Helvetica, sans-serif;
 	line-height: 2 ;
 }
-.active, .img-hover:hover{
+.img-hover:hover{
     border-color:#030611;
     border-style: solid;
 }

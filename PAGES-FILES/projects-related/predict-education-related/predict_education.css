@@ -1,0 +1,111 @@
+/* NAVBAR RELATED */
+body{
+    background-color: #EDEDED;
+}
+
+.navbar-brand, .nav-link, .dropdown-item{
+	color: #eaeeee
+}
+
+#navbar {
+    position: fixed;
+    top: 0px;
+    width: 10%;
+}
+.dropdown-item:hover{
+    background-color: inherit;
+	color:  #ffffff;
+	text-decoration: underline;
+}
+.nav-link:hover, .nav-link:active{
+    color:#ffffff;
+}
+.btn{
+	background-color: #819b9e
+}
+/* THIS SECTIOn FOCUS ON PADDING OR MARGIN MEANING SHIFTING IMAGES, NAVBAR, AND OTHERS AROUND */
+/* keeps navbar spacing each other */
+.navbar-nav > li{
+	padding-left:25px;
+	padding-right:25px;
+}
+.description-content {
+	margin-top: 30px;
+	margin-bottom: 60px;
+	padding: 10px 30px 5px;
+	color: black;
+	background-color: white;
+}
+.imageNav-content {
+	margin-top: 40px;
+	margin-bottom: 20px;
+	padding: 10px 30px 40px;
+	color: black;
+	background-color: white;
+}
+.description-header, .imageNav-header {
+	padding-top: 15px;
+	padding-left: 4px;
+	color: #38554c;
+	font-size: 26px;
+	font-weight: bold;
+	font-family: Georgia, Times, "Times New Roman", serif;
+}
+
+.navbar-image{
+	/* put value of image height as your need */
+	float: right;
+	margin-right: 8px;
+	width: 10%;
+}
+.img-hover:hover{
+    border-color:#030611;
+    border-style: solid;
+}
+.tiny-image{
+	width: 6%; 
+	height: 5%; 
+}
+/* footer related */
+.footer{
+    border-top-width: 4px;
+    color: #000000;
+    min-height: 50px;
+    font-size: 12px;
+    text-align: center;
+    position: fixed;
+    padding-top: 15px;
+	padding-left: 20px;
+	padding-right: 20px;
+	left: 0;
+	bottom: 0;
+    float: none;
+}
+.footer-project {
+    border-top-width: 4px;
+    color: #000000;
+    min-height: 50px;
+    font-size: 12px;
+    text-align: center;
+    position: fixed;
+    padding-top: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    right: 0;   /* Positions the footer at the right edge of the viewport */
+    bottom: 0;  /* Keeps the footer at the bottom */
+}
+/* google slides */
+.google-slides-container{
+    position: relative;
+    width: 100%;
+    padding-top: 60%;
+    overflow: hidden;
+}
+
+.google-slides-container iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 85%;
+}
