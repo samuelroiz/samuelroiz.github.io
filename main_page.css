@@ -58,6 +58,14 @@ body{
     margin-top: -200px;
 }
 
+.text-up-2 {
+    margin-top: -100px;
+}
+
+.text-up-2-h2 {
+	margin-bottom: 30px; /* Adjust this value to control spacing after the h2 */
+}
+
 .text-up-h2 {
 	margin-bottom: 30px; /* Adjust this value to control spacing after the h2 */
 }
@@ -138,6 +146,73 @@ p{
     border-color:#030611;
     border-style: solid;
 }
+
+.btn-box {
+justify-content: center;
+}
+
+.btn-box {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+	margin: 35px -5px 0 -5px;
+  }
+  
+  .btn-box a {
+	width: 175px;
+	margin: 5px;
+	text-align: center;
+  }
+  
+  .btn-box .btn-1 {
+	display: inline-block;
+	padding: 10px 0;
+	background-color: #2fc4bd;
+	color: #ffffff;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+	border: 1px solid #2fc4bd;
+	border-radius: 3px;
+	text-transform: uppercase;
+  }
+  
+  .btn-box .btn-1:hover {
+	background-color: transparent;
+	color: #2fc4bd;
+  }
+  
+  .btn-box .btn-2 {
+	display: inline-block;
+	padding: 10px 0;
+	background-color: #363636;
+	color: #ffffff;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+	border: 1px solid #363636;
+	border-radius: 3px;
+	text-transform: uppercase;
+	/* text-decoration: underline; Add underline on hover */
+  }
+  
+  .btn-box .btn-2:hover {
+	background-color: transparent;
+	color: #363636;
+  }
+
+
+  /* .btn-box {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	margin-top: 25px;
+  }
+
+  .btn-box a {
+	width: auto;
+  } */
+
 .footer{
     border-top-width: 4px;
     color: #000000;
