@@ -66,6 +66,9 @@ body{
 	width: 6%; 
 	height: 5%; 
 }
+.github-right {
+    padding-left: 100px;
+}
 /* footer related */
 .footer{
     border-top-width: 4px;
