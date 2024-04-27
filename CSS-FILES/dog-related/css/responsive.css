@@ -190,3 +190,10 @@
     max-width: 1170px;
   }
 }
+
+@media (max-width: 480px) {
+  .navbar-brand img {
+      position: relative; /* Ensure it's relative to allow easy adjustment */
+      left: 10px; /* Move it to the right */
+  }
+}
