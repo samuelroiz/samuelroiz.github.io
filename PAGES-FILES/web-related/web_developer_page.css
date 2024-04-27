@@ -84,3 +84,58 @@ body{
 	bottom: 0;
     float: none;
 }
+
+/* General Responsive Settings */
+@media (max-width: 480px) {
+    body {
+        background-color: #FFF; /* Lighter background for mobile, if needed */
+    }
+
+    .description-content, .imageNav-content {
+        margin-top: 20px; /* Less margin */
+        margin-bottom: 20px;
+        padding: 5px 15px; /* Less padding */
+    }
+
+    .description-header, .imageNav-header {
+        font-size: 20px; /* Smaller font size for headers */
+    }
+
+    .footer {
+        min-height: 60px; /* Adjust footer height */
+        font-size: 10px; /* Smaller font size in the footer */
+        padding-top: 10px; /* Adjust padding */
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    /* Image adjustments */
+    .tiny-image {
+        width: 15%; /* Larger to be more visible */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .github-right {
+        padding-left: 0; /* Remove left padding */
+        display: block; /* Make GitHub link block to occupy its own line */
+        margin-top: 10px; /* Add margin top */
+    }
+
+    /* Image adjustments in project entries */
+    .picture-hover {
+        width: 100%; /* Full width for images */
+        height: auto; /* Adjust height automatically */
+        margin-bottom: 10px; /* More space below images */
+    }
+
+    .img-thumbnail {
+        padding: 0; /* Reduce padding around images */
+    }
+
+    /* Project columns */
+    .row .col-3 {
+        width: 100%; /* Full width columns */
+        max-width: 100%; /* Ensure no overflow */
+        margin-top: 10px; /* Space between stacked columns */
+    }
+}

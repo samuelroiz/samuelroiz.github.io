@@ -146,3 +146,98 @@ img{
     background-color: transparent;
     color: #2fc4bd;
   }
+
+
+/* General styles for the main layout */
+/* Adjusts for general responsiveness without affecting main layout */
+.img-fluid {
+  width: 100%;
+  height: auto;
+}
+
+/* Specific styles for smaller screens like iPhones */
+@media (max-width: 480px) {
+  /* Adjusting text centering, overlay, and image container layouts */
+  .text-center {
+      text-align: center; /* Center text for small screens */
+  }
+
+  .img-overlay-container {
+      position: relative; /* Essential for positioning text over image */
+  }
+
+  .img-fluid.img-darken {
+      filter: brightness(50%); /* Adjust brightness for readability */
+  }
+
+  .overlay-text, .text-content {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%); /* Centers the content horizontally */
+      width: 90%; /* More readable width on small screens */
+      text-align: center; /* Centers text inside the div */
+  }
+
+  .overlay-text {
+      top: 10%; /* Adjusts top position for visibility */
+      font-size: 24px; /* Smaller font size for overlay text */
+  }
+
+  .text-content {
+      top: 25%; /* Adjusts top position to not overlap with overlay text */
+      padding: 15px; /* More padding for better text separation */
+      background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for better readability */
+      border-radius: 10px; /* Rounded corners for aesthetic */
+      color: #fff; /* Ensures text is white */
+  }
+
+  /* Section adjustments */
+  .about_section {
+      margin-top: 0; /* Reduces top margin on mobile */
+  }
+
+  .adopted-img-box .image-link img {
+      width: 100%; /* Full width images */
+      height: auto; /* Auto height to maintain aspect ratio */
+      margin-bottom: 15px; /* Adds bottom margin for spacing */
+  }
+
+  .adopted-img-box .image-link {
+      display: block; /* Each image link on a new line */
+      margin: 0; /* Remove margins for flush alignment */
+  }
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 480px) {
+  .overlay-text {
+      top: 5%; /* Slightly higher on small screens */
+      font-size: 18px; /* Smaller font size for small screens */
+  }
+
+  .text-content {
+      top: 30%; /* More space from the top to avoid overlapping */
+      font-size: 14px; /* Smaller text for small screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .overlay-text, .text-content {
+      position: static; /* Switch from absolute to static positioning */
+      transform: none; /* Remove transformations */
+      width: auto; /* Auto width to fit the natural content flow */
+      margin: 20px 10px; /* Add some margin for spacing */
+      background: transparent; /* Remove the semi-transparent background */
+      color: black; /* Adjust text color to match the theme */
+      text-align: left; /* Align text to the left */
+  }
+
+  .img-fluid.img-darken {
+      filter: none; /* Remove the darken filter to keep the image clear */
+  }
+
+  .img-overlay-container {
+      order: 1; /* Ensure this container stays at the intended place in flexbox if used */
+      padding-bottom: 20px; /* Space before the next section starts */
+  }
+}
